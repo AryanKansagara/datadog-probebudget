@@ -1,0 +1,9 @@
+{
+  "company": "Datadog",
+  "title": "ProbeBudget",
+  "test_command": "python -m unittest discover -v",
+  "demo_command": "python probebudget.py --output demo.json",
+  "scope": "Real loopback HTTP instrumentation with authored signatures and exact frame budgets; no Datadog adapter",
+  "implemented": true,
+  "integration_status": "unverified"
+}

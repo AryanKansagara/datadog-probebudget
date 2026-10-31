@@ -1,0 +1,2283 @@
+{
+  "schema_version": 1,
+  "scope": "real local HTTP requests and probe capture; authored synthetic fault signatures; no Datadog adapter",
+  "seed": 7,
+  "budget_scope": "encoded newline JSON probe frames only; HTTP and fixed report overhead excluded",
+  "calibration": {
+    "max_measured_frame_bytes": {
+      "cache": 43,
+      "attempts": 42,
+      "downstream": 50,
+      "heartbeat": 46,
+      "context": 542
+    },
+    "observations": [
+      {
+        "fault_fixture": "healthy",
+        "capture_cpu_ns": 45427,
+        "elapsed_ms": 1.3488600002347084,
+        "emitted_bytes": 723,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": false
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 1
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "normal"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 30826,
+        "skipped": [],
+        "symptom": "normal"
+      },
+      {
+        "fault_fixture": "stale",
+        "capture_cpu_ns": 35042,
+        "elapsed_ms": 1.2817400001949864,
+        "emitted_bytes": 722,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": true
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 1
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "normal"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 33460,
+        "skipped": [],
+        "symptom": "anomaly"
+      },
+      {
+        "fault_fixture": "slow",
+        "capture_cpu_ns": 44606,
+        "elapsed_ms": 6.169169999793667,
+        "emitted_bytes": 721,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": false
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 1
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "slow"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 37775,
+        "skipped": [],
+        "symptom": "anomaly"
+      },
+      {
+        "fault_fixture": "retry",
+        "capture_cpu_ns": 38818,
+        "elapsed_ms": 3.833105000012438,
+        "emitted_bytes": 723,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": false
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 3
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "normal"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 53612,
+        "skipped": [],
+        "symptom": "anomaly"
+      },
+      {
+        "fault_fixture": "dual",
+        "capture_cpu_ns": 36474,
+        "elapsed_ms": 3.8199340001483506,
+        "emitted_bytes": 722,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": true
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 3
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "normal"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 49634,
+        "skipped": [],
+        "symptom": "anomaly"
+      },
+      {
+        "fault_fixture": "unmodeled",
+        "capture_cpu_ns": 45708,
+        "elapsed_ms": 7.282302000021446,
+        "emitted_bytes": 723,
+        "frames": [
+          {
+            "probe": "cache",
+            "values": {
+              "stale": false
+            }
+          },
+          {
+            "probe": "attempts",
+            "values": {
+              "count": 1
+            }
+          },
+          {
+            "probe": "downstream",
+            "values": {
+              "band": "normal"
+            }
+          },
+          {
+            "probe": "heartbeat",
+            "values": {
+              "alive": true
+            }
+          },
+          {
+            "probe": "context",
+            "values": {
+              "routes": [
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory",
+                "/checkout",
+                "/inventory"
+              ]
+            }
+          }
+        ],
+        "service_cpu_ns": 6064407,
+        "skipped": [],
+        "symptom": "anomaly"
+      }
+    ]
+  },
+  "summary": {
+    "information": {
+      "cases": 6,
+      "correct_single_faults": 4,
+      "adverse_control_abstentions": 2,
+      "emitted_bytes": 806,
+      "budget_violations": 0
+    },
+    "cheapest": {
+      "cases": 6,
+      "correct_single_faults": 0,
+      "adverse_control_abstentions": 2,
+      "emitted_bytes": 784,
+      "budget_violations": 0
+    },
+    "random": {
+      "cases": 6,
+      "correct_single_faults": 0,
+      "adverse_control_abstentions": 2,
+      "emitted_bytes": 830,
+      "budget_violations": 0
+    },
+    "all": {
+      "cases": 6,
+      "correct_single_faults": 4,
+      "adverse_control_abstentions": 2,
+      "emitted_bytes": 4334,
+      "budget_violations": 6
+    }
+  },
+  "runs": [
+    {
+      "fault_fixture": "healthy",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 135,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "downstream": "normal"
+      },
+      "candidates": [
+        "healthy"
+      ],
+      "diagnosis": "healthy",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 41141,
+      "service_cpu_ns": 146397,
+      "http_requests": 4,
+      "elapsed_ms": 5.172839999886492,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "healthy",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 131,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "healthy"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 42843,
+      "service_cpu_ns": 127738,
+      "http_requests": 4,
+      "elapsed_ms": 5.115235000175744,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "healthy",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 139,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "normal",
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "healthy"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 42273,
+      "service_cpu_ns": 239807,
+      "http_requests": 4,
+      "elapsed_ms": 5.16710200054149,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "healthy",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 723,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": false,
+        "attempts": 1,
+        "downstream": "normal",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [
+        "healthy"
+      ],
+      "diagnosis": "healthy",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 89473,
+      "service_cpu_ns": 229924,
+      "http_requests": 6,
+      "elapsed_ms": 7.648025999969832,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "stale",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 134,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": true,
+        "downstream": "normal"
+      },
+      "candidates": [
+        "stale"
+      ],
+      "diagnosis": "stale",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 42842,
+      "service_cpu_ns": 112777,
+      "http_requests": 4,
+      "elapsed_ms": 5.137877999459306,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "stale",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 130,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": true,
+        "heartbeat": true
+      },
+      "candidates": [
+        "stale",
+        "stale+slow"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 59047,
+      "service_cpu_ns": 100390,
+      "http_requests": 4,
+      "elapsed_ms": 5.0960580006176315,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "stale",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 138,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "normal",
+        "cache": true,
+        "heartbeat": true
+      },
+      "candidates": [
+        "stale",
+        "stale+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 42773,
+      "service_cpu_ns": 382928,
+      "http_requests": 4,
+      "elapsed_ms": 5.397622999680607,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "stale",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 722,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": true,
+        "attempts": 1,
+        "downstream": "normal",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [
+        "stale"
+      ],
+      "diagnosis": "stale",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 85456,
+      "service_cpu_ns": 197145,
+      "http_requests": 6,
+      "elapsed_ms": 7.659249999960593,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "slow",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 133,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "downstream": "slow"
+      },
+      "candidates": [
+        "slow"
+      ],
+      "diagnosis": "slow",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 129703,
+      "service_cpu_ns": 153638,
+      "http_requests": 4,
+      "elapsed_ms": 24.343550000594405,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "slow"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "slow",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 131,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "slow"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 51768,
+      "service_cpu_ns": 141763,
+      "http_requests": 4,
+      "elapsed_ms": 24.348631000066234,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "slow",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 137,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "slow",
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "slow",
+        "slow+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 79768,
+      "service_cpu_ns": 112079,
+      "http_requests": 4,
+      "elapsed_ms": 24.329568999746698,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "slow"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "slow",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 721,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": false,
+        "attempts": 1,
+        "downstream": "slow",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [
+        "slow"
+      ],
+      "diagnosis": "slow",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 90535,
+      "service_cpu_ns": 209711,
+      "http_requests": 6,
+      "elapsed_ms": 36.511749000055715,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "slow"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "retry",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 135,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 3,
+        "cache": false,
+        "downstream": "normal"
+      },
+      "candidates": [
+        "retry"
+      ],
+      "diagnosis": "retry",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 52729,
+      "service_cpu_ns": 249380,
+      "http_requests": 4,
+      "elapsed_ms": 15.506313999594568,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "retry",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 131,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 3,
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "retry",
+        "slow+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 48553,
+      "service_cpu_ns": 221809,
+      "http_requests": 4,
+      "elapsed_ms": 15.351285000633652,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "retry",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 139,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "normal",
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 48010,
+      "service_cpu_ns": 224544,
+      "http_requests": 4,
+      "elapsed_ms": 15.318711000418261,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "retry",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 723,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": false,
+        "attempts": 3,
+        "downstream": "normal",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [
+        "retry"
+      ],
+      "diagnosis": "retry",
+      "abstained": false,
+      "reason": "identified authored single-fault signature",
+      "secret_absent": true,
+      "capture_cpu_ns": 112988,
+      "service_cpu_ns": 443717,
+      "http_requests": 6,
+      "elapsed_ms": 23.122306000459503,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "dual",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 134,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 3,
+        "cache": true,
+        "downstream": "normal"
+      },
+      "candidates": [
+        "stale+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "compound fault requires review",
+      "secret_absent": true,
+      "capture_cpu_ns": 134170,
+      "service_cpu_ns": 245536,
+      "http_requests": 4,
+      "elapsed_ms": 15.393757999845548,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "dual",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 130,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 3,
+        "cache": true,
+        "heartbeat": true
+      },
+      "candidates": [
+        "stale+retry",
+        "stale+slow+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 52669,
+      "service_cpu_ns": 244370,
+      "http_requests": 4,
+      "elapsed_ms": 15.406326000174886,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "dual",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 138,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "normal",
+        "cache": true,
+        "heartbeat": true
+      },
+      "candidates": [
+        "stale",
+        "stale+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 46940,
+      "service_cpu_ns": 516618,
+      "http_requests": 4,
+      "elapsed_ms": 15.579634999994596,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "dual",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 722,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": true,
+        "attempts": 3,
+        "downstream": "normal",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [
+        "stale+retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "compound fault requires review",
+      "secret_absent": true,
+      "capture_cpu_ns": 147630,
+      "service_cpu_ns": 336843,
+      "http_requests": 6,
+      "elapsed_ms": 25.432701000681845,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": true
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 3
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "unmodeled",
+      "strategy": "information",
+      "budget": 170,
+      "emitted_bytes": 135,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "downstream"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "downstream": "normal"
+      },
+      "candidates": [],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "unmodeled/unstable evidence",
+      "secret_absent": true,
+      "capture_cpu_ns": 79648,
+      "service_cpu_ns": 23606206,
+      "http_requests": 4,
+      "elapsed_ms": 29.14564199954839,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "unmodeled",
+      "strategy": "cheapest",
+      "budget": 170,
+      "emitted_bytes": 131,
+      "budget_exceeded": false,
+      "selection": [
+        "attempts",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "attempts": 1,
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "slow"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 54471,
+      "service_cpu_ns": 24121637,
+      "http_requests": 4,
+      "elapsed_ms": 29.1136470004858,
+      "frames": [
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "unmodeled",
+      "strategy": "random",
+      "budget": 170,
+      "emitted_bytes": 139,
+      "budget_exceeded": false,
+      "selection": [
+        "downstream",
+        "cache",
+        "heartbeat"
+      ],
+      "observed": {
+        "downstream": "normal",
+        "cache": false,
+        "heartbeat": true
+      },
+      "candidates": [
+        "retry"
+      ],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "insufficient discrimination or budget",
+      "secret_absent": true,
+      "capture_cpu_ns": 50605,
+      "service_cpu_ns": 24113868,
+      "http_requests": 4,
+      "elapsed_ms": 29.10962899977676,
+      "frames": [
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        }
+      ]
+    },
+    {
+      "fault_fixture": "unmodeled",
+      "strategy": "all",
+      "budget": 170,
+      "emitted_bytes": 723,
+      "budget_exceeded": true,
+      "selection": [
+        "cache",
+        "attempts",
+        "downstream",
+        "heartbeat",
+        "context"
+      ],
+      "observed": {
+        "cache": false,
+        "attempts": 1,
+        "downstream": "normal",
+        "heartbeat": true,
+        "context": [
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory",
+          "/checkout",
+          "/inventory"
+        ]
+      },
+      "candidates": [],
+      "diagnosis": null,
+      "abstained": true,
+      "reason": "unmodeled/unstable evidence",
+      "secret_absent": true,
+      "capture_cpu_ns": 105538,
+      "service_cpu_ns": 37184453,
+      "http_requests": 6,
+      "elapsed_ms": 44.68263700027819,
+      "frames": [
+        {
+          "probe": "cache",
+          "values": {
+            "stale": false
+          }
+        },
+        {
+          "probe": "attempts",
+          "values": {
+            "count": 1
+          }
+        },
+        {
+          "probe": "downstream",
+          "values": {
+            "band": "normal"
+          }
+        },
+        {
+          "probe": "heartbeat",
+          "values": {
+            "alive": true
+          }
+        },
+        {
+          "probe": "context",
+          "values": {
+            "routes": [
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory",
+              "/checkout",
+              "/inventory"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
